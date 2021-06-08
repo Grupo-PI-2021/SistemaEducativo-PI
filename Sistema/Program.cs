@@ -13,8 +13,7 @@ namespace Sistema
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Default: Login/Register
-            Application.Run(new Forms.());
+            Application.Run(new Forms.LoginRegistro());
         }
     }
 }

@@ -1,18 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
 
-namespace Sistema
+namespace Sistema.Forms
 {
-
-    
-
 
     public partial class LoginRegistro : Form
     {
@@ -21,25 +14,11 @@ namespace Sistema
         {
             InitializeComponent();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void txtPass_TextChanged(object sender, EventArgs e)
-        {
-          
-        }
-
         private void btnLog_Click(object sender, EventArgs e)
         {
             Principal PrincipalForm = new Principal();
+            PrincipalForm.Show();
+            this.Hide();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -49,7 +28,12 @@ namespace Sistema
 
         private void btnSign_Click(object sender, EventArgs e)
         {
-          Forms.Register RegisterForm = new Forms.Register();
+          //Forms.Register RegisterForm = new Forms.Register();
+        }
+
+        private void LoginRegistro_Load(object sender, EventArgs e)
+        {
+            this.txtUser.BackColor = Color.LimeGreen;
         }
     }
 }

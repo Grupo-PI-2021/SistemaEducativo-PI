@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms;
 
-namespace Sistema
+namespace Sistema.Forms
 {
     public partial class Principal : Form
     {
@@ -21,6 +15,8 @@ namespace Sistema
 
         public void InitializeChromium()
         {
+            Thread.Sleep(500);
+
             CefSettings settings = new CefSettings();
 
             /*CACHE PATH*/
@@ -52,6 +48,9 @@ namespace Sistema
             settings.SetOffScreenRenderingBestPerformanceArgs();
 
             //-FIM-DA-CONFIG-
+
+            //WAIT 1SEC.
+            Thread.Sleep(500);
 
             //-INICIALIZAR-CONFIG-
             Cef.Initialize(settings);
@@ -94,7 +93,13 @@ namespace Sistema
             csharpBrowser.ExecuteScriptAsync(cl_data.ScriptHideElement);
             //SCRIPT SHOW ELEMENTS
             csharpBrowser.ExecuteScriptAsync(cl_data.ScriptShowElement);
+            //SCRIPT UPDATE TEXT
+            csharpBrowser.ExecuteScriptAsync(cl_data.ScriptUpdateText);
 
+            //SCRIPT CSS 01 - ADJUSTER
+            csharpBrowser.ExecuteScriptAsync(cl_data.ScriptStyleAdjustes);
+            //SCRIPT CSS 02 - INVERTER
+            csharpBrowser.ExecuteScriptAsync(cl_data.ScriptStyleInvertColor);
 
             pnlWebSharp.Focus();
         }
@@ -117,9 +122,6 @@ namespace Sistema
                 File.Create(cl_data.DataFile);
             }
 
-            //cl_data.csharpBrowser.Load(txtAdr.Text);
-            csharpBrowser.Load("https://dotnetfiddle.net/#");
-
         }
 
         private void Principal_FormClosing(object sender, FormClosingEventArgs e)
@@ -140,6 +142,11 @@ namespace Sistema
         private void txtAdr_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnComecar_Click(object sender, EventArgs e)
+        {
+            csharpBrowser.Load("https://dotnetfiddle.net/#");
         }
     }
 }

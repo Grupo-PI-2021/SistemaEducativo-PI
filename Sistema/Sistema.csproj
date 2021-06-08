@@ -68,23 +68,11 @@
     <Compile Include="Class\Login-Register.cs" />
     <Compile Include="Class\MenuHandler.cs" />
     <Compile Include="Database\Database.cs" />
-    <Compile Include="Fix.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fix.Designer.cs">
-      <DependentUpon>Fix.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormLevelSelector.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormLevelSelector.Designer.cs">
       <DependentUpon>FormLevelSelector.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\InterfaceWebCharp.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\InterfaceWebCharp.Designer.cs">
-      <DependentUpon>InterfaceWebCharp.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginRegistro.cs">
       <SubType>Form</SubType>
@@ -92,62 +80,44 @@
     <Compile Include="Forms\LoginRegistro.Designer.cs">
       <DependentUpon>LoginRegistro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Login.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Register.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Forms\RoundButton.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\Register.Designer.cs">
-      <DependentUpon>Register.cs</DependentUpon>
+    <Compile Include="Forms\RoundButton.Designer.cs">
+      <DependentUpon>RoundButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Fix.resx">
-      <DependentUpon>Fix.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLevelSelector.resx">
       <DependentUpon>FormLevelSelector.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\InterfaceWebCharp.resx">
-      <DependentUpon>InterfaceWebCharp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginRegistro.resx">
       <DependentUpon>LoginRegistro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Register.resx">
-      <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -159,16 +129,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logopi2021-1.ico" />
-    <None Include="Resources\fundo-de-formularios-sobrepostos_52683-464331.jpg" />
-    <None Include="Resources\conceito-de-fundo-de-formularios-sobrepostos_52683-46434.jpg" />
-    <None Include="Resources\fundo-de-formularios-sobrepostos_52683-46433.jpg" />
-    <None Include="Resources\login.png" />
-    <None Include="Resources\181534.png" />
-    <None Include="Resources\user1.png" />
-    <None Include="Resources\user.png" />
-    <None Include="Resources\simbolo-de-cadeado-para-interface-de-cadeado.png" />
-    <None Include="Resources\2089795.png" />
-    <None Include="Resources\usuario.png" />
     <None Include="Resources\logopi2021-1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -7,6 +7,8 @@ namespace Sistema.Class
 {
     public class Data
     {
+        //OTHERS VARS
+        public string cssfontFamily = "'Lucida Console', 'Courier New', monospace";
 
         public string BrowserUrl { get; set; } = "https://dotnetfiddle.net/";
 
@@ -77,6 +79,54 @@ namespace Sistema.Class
         $('.stats-pane').show();   //show - Stats Panel
 
         ";
+
+        public string ScriptUpdateText { get; } = @"
+//$('.CodeMirror-line').css('border', '2px solid gray');
+//$('.CodeMirror-line').css('border-width', '2px 2px 2px 2px');
+
+
+
+
+//$('.pane').click(function() {
+//    location.reload();
+//});
+        //$('.pane').css('border', '1px solid red');//Todos Paineis
+
+//        $('.CodeMirror-lines:first').text(@'
+//        using System;
+//					//Software desenvolvido por: Unifeb (SI - PI 2021/01)
+//public class Program
+//{
+//	public static void Main()
+//	{
+//		Console.WriteLine('Hello World');
+
+//    }
+//}
+//');
+        ";
+
+        public string ScriptStyleInvertColor { get; } = @"
+            $('html').css('-webkit-filter', 'invert(100%)');
+            $('html').css('-moz-filter', 'invert(100%)');
+            $('html').css('-o-filter', 'invert(100%)');
+            $('html').css('-ms-filter', 'invert(100%)');";
+
+        //public string ScriptStyleAdjustes { get; } = String.Format(@"
+        //    $('html').css('font-size', '20px');
+        //    $('html').css('font-family', '{0}');
+        //    $('html').css('-o-filter', 'invert(100%)');
+        //    $('html').css('-ms-filter', 'invert(100%)');");
+        public string ScriptStyleAdjustes { get; } = String.Format(@"
+            //$('html').css('font-size', '20px');
+            $('html').css('font-family', 'Courier New');");
+
+
+
+        //html { -webkit-filter: invert(100%);
+        //-moz-filter: invert(100%);
+        //-o-filter: invert(100%);
+        //-ms-filter: invert(100%); }";
 
 
         #region Dracula Colors

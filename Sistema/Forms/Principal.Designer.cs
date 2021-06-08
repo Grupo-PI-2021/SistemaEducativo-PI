@@ -1,5 +1,5 @@
 ﻿
-namespace Sistema
+namespace Sistema.Forms
 {
     partial class Principal
     {
@@ -36,6 +36,7 @@ namespace Sistema
             this.button1 = new System.Windows.Forms.Button();
             this.txtAdr = new System.Windows.Forms.TextBox();
             this.pageExamples = new System.Windows.Forms.TabPage();
+            this.btnComecar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.pageCodePrincipal.SuspendLayout();
             this.pnlWebSharp.SuspendLayout();
@@ -65,6 +66,7 @@ namespace Sistema
             // 
             // pnlWebSharp
             // 
+            this.pnlWebSharp.Controls.Add(this.btnComecar);
             this.pnlWebSharp.Controls.Add(this.button1);
             this.pnlWebSharp.Controls.Add(this.txtAdr);
             this.pnlWebSharp.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -89,7 +91,7 @@ namespace Sistema
             this.txtAdr.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtAdr.Location = new System.Drawing.Point(5, 504);
             this.txtAdr.Name = "txtAdr";
-            this.txtAdr.Size = new System.Drawing.Size(139, 20);
+            this.txtAdr.Size = new System.Drawing.Size(183, 20);
             this.txtAdr.TabIndex = 1;
             this.txtAdr.Text = "https://dotnetfiddle.net/";
             this.txtAdr.Visible = false;
@@ -105,12 +107,22 @@ namespace Sistema
             this.pageExamples.TabIndex = 1;
             this.pageExamples.Text = "Examples";
             // 
+            // btnComecar
+            // 
+            this.btnComecar.Location = new System.Drawing.Point(423, 289);
+            this.btnComecar.Name = "btnComecar";
+            this.btnComecar.Size = new System.Drawing.Size(148, 70);
+            this.btnComecar.TabIndex = 3;
+            this.btnComecar.Text = "Começar";
+            this.btnComecar.UseVisualStyleBackColor = true;
+            this.btnComecar.Visible = false;
+            this.btnComecar.Click += new System.EventHandler(this.btnComecar_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(42)))), ((int)(((byte)(54)))));
-            this.BackgroundImage = global::Sistema.Properties.Resources.fundo_de_formularios_sobrepostos_52683_46433;
             this.ClientSize = new System.Drawing.Size(1008, 681);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -137,5 +149,6 @@ namespace Sistema
         private System.Windows.Forms.Panel pnlWebSharp;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtAdr;
+        private System.Windows.Forms.Button btnComecar;
     }
 }

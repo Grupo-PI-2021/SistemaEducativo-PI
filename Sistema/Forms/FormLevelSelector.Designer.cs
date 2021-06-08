@@ -29,6 +29,7 @@ namespace Sistema.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLevelSelector));
             this.button1 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -54,8 +55,7 @@ namespace Sistema.Forms
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button1.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button1.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(6, 159);
             this.button1.Name = "button1";
@@ -66,7 +66,7 @@ namespace Sistema.Forms
             // 
             // button7
             // 
-            this.button7.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button7.Location = new System.Drawing.Point(139, 245);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(100, 56);
@@ -77,8 +77,7 @@ namespace Sistema.Forms
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button8.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button8.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button8.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button8.ForeColor = System.Drawing.Color.White;
             this.button8.Location = new System.Drawing.Point(6, 245);
             this.button8.Name = "button8";
@@ -89,7 +88,7 @@ namespace Sistema.Forms
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button2.Location = new System.Drawing.Point(139, 159);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 56);
@@ -99,7 +98,7 @@ namespace Sistema.Forms
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button3.Location = new System.Drawing.Point(275, 159);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 56);
@@ -109,7 +108,7 @@ namespace Sistema.Forms
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button4.Location = new System.Drawing.Point(275, 245);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 56);
@@ -119,7 +118,7 @@ namespace Sistema.Forms
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button5.Location = new System.Drawing.Point(412, 159);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 56);
@@ -129,7 +128,7 @@ namespace Sistema.Forms
             // 
             // button6
             // 
-            this.button6.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button6.Location = new System.Drawing.Point(551, 159);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 56);
@@ -140,7 +139,7 @@ namespace Sistema.Forms
             // 
             // button9
             // 
-            this.button9.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button9.Location = new System.Drawing.Point(412, 245);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(100, 56);
@@ -150,7 +149,7 @@ namespace Sistema.Forms
             // 
             // button10
             // 
-            this.button10.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.button10.Location = new System.Drawing.Point(551, 245);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(100, 56);
@@ -162,19 +161,18 @@ namespace Sistema.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Montserrat", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(211, 48);
+            this.label1.Location = new System.Drawing.Point(204, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 38);
+            this.label1.Size = new System.Drawing.Size(250, 44);
             this.label1.TabIndex = 2;
             this.label1.Text = "Select Level";
             // 
             // button11
             // 
             this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button11.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button11.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button11.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button11.ForeColor = System.Drawing.Color.White;
             this.button11.Location = new System.Drawing.Point(139, 159);
             this.button11.Name = "button11";
@@ -186,8 +184,7 @@ namespace Sistema.Forms
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button12.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button12.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button12.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button12.ForeColor = System.Drawing.Color.White;
             this.button12.Location = new System.Drawing.Point(139, 245);
             this.button12.Name = "button12";
@@ -199,8 +196,7 @@ namespace Sistema.Forms
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button13.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button13.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button13.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button13.ForeColor = System.Drawing.Color.White;
             this.button13.Location = new System.Drawing.Point(275, 245);
             this.button13.Name = "button13";
@@ -212,8 +208,7 @@ namespace Sistema.Forms
             // button14
             // 
             this.button14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button14.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button14.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button14.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button14.ForeColor = System.Drawing.Color.White;
             this.button14.Location = new System.Drawing.Point(275, 159);
             this.button14.Name = "button14";
@@ -225,8 +220,7 @@ namespace Sistema.Forms
             // button15
             // 
             this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button15.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button15.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button15.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button15.ForeColor = System.Drawing.Color.White;
             this.button15.Location = new System.Drawing.Point(412, 159);
             this.button15.Name = "button15";
@@ -238,8 +232,7 @@ namespace Sistema.Forms
             // button16
             // 
             this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button16.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button16.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button16.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button16.ForeColor = System.Drawing.Color.White;
             this.button16.Location = new System.Drawing.Point(551, 159);
             this.button16.Name = "button16";
@@ -252,8 +245,7 @@ namespace Sistema.Forms
             // button17
             // 
             this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button17.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button17.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button17.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button17.ForeColor = System.Drawing.Color.White;
             this.button17.Location = new System.Drawing.Point(412, 245);
             this.button17.Name = "button17";
@@ -265,8 +257,7 @@ namespace Sistema.Forms
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button18.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
-            this.button18.Font = new System.Drawing.Font("Stencil", 9.75F);
+            this.button18.Font = new System.Drawing.Font("Montserrat", 10F);
             this.button18.ForeColor = System.Drawing.Color.White;
             this.button18.Location = new System.Drawing.Point(551, 245);
             this.button18.Name = "button18";
@@ -279,11 +270,12 @@ namespace Sistema.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Font = new System.Drawing.Font("Montserrat", 20F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(635, -1);
+            this.label4.Location = new System.Drawing.Point(616, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 26);
+            this.label4.Size = new System.Drawing.Size(35, 35);
             this.label4.TabIndex = 10;
             this.label4.Text = "X";
             // 
@@ -292,7 +284,8 @@ namespace Sistema.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.BackgroundImage = global::Sistema.Properties.Resources.conceito_de_fundo_de_formularios_sobrepostos_52683_46434;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(659, 361);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -316,6 +309,7 @@ namespace Sistema.Forms
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLevelSelector";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLevelSelector";
             this.ResumeLayout(false);
             this.PerformLayout();
