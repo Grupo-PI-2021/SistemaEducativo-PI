@@ -19,8 +19,8 @@ public class MenuHandler : IContextMenuHandler
 
 
         // Add a new item to the list using the AddItem method of the model
-        //model.AddItem((CefMenuCommand)26501, "Show DevTools");
-        //model.AddItem((CefMenuCommand)26502, "Close DevTools");
+        model.AddItem((CefMenuCommand)26501, "Show DevTools");
+        model.AddItem((CefMenuCommand)26502, "Close DevTools");
 
         // Add a separator
         //model.AddSeparator();
@@ -32,18 +32,18 @@ public class MenuHandler : IContextMenuHandler
     public bool OnContextMenuCommand(IWebBrowser browserControl, IBrowser browser, IFrame frame, IContextMenuParams parameters, CefMenuCommand commandId, CefEventFlags eventFlags)
     {
         // React to the first ID (show dev tools method)
-        //if (commandId == (CefMenuCommand)26501)
-        //{
-        //    //browser.GetHost().ShowDevTools();
-        //    return true;
-        //}
+        if (commandId == (CefMenuCommand)26501)
+        {
+            browser.GetHost().ShowDevTools();
+            return true;
+        }
 
-        // React to the second ID (show dev tools method)
-        //if (commandId == (CefMenuCommand)26502)
-        //{
-        //    browser.GetHost().CloseDevTools();
-        //    return true;
-        //}
+        //React to the second ID(show dev tools method)
+        if (commandId == (CefMenuCommand)26502)
+        {
+            browser.GetHost().CloseDevTools();
+            return true;
+        }
 
         // React to the third ID (Display alert message)
         //if (commandId == (CefMenuCommand)26503)

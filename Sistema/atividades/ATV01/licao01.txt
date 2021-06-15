@@ -1,0 +1,49 @@
+As variáveis são utilizadas para armazenar informações na memória em tempo de execução da aplicação.
+
+int idade = 18;   int é o tipo e idade é o nome da variável, o 18 é o valor que esta sendo atribuido na variavel.Serve apenas para armazenar números interios.
+
+double dist = 1.5; double é o tipo e dist é o nome da variável, o 1.5 é o valor que esta sendo atribuido na variavel. É usado para armazenar números interos e decimais.
+
+string name = "Ramon"; string é o tipo e name é o nome da variável, o nome Ramon esta sendo atribuido na variavel. Serve apena para armazenar texto.
+
+
+//O comando if permite que uma parte do programa seja executada apenas quando uma condição for verdadeira.
+
+public class Program
+{
+	public static void Main()
+	{
+            int idade;
+            Console.WriteLine("Digite sua idade.");
+            idade = int.Parse(Console.ReadLine());
+
+            if (idade >= 18) //Se a idade da pessoa for maior ou igual a 18, executara o codigo a baixo.
+            {
+                Console.WriteLine("Parabéns, você já tem idade para tirar a sua carteira.");
+                Console.ReadKey();
+            }
+        }
+}
+
+O comando if/else é um recurso que indica quais instruções o sistema deve processar de acordo com uma expressão booleana(verdadeira ou falsa).
+Assim, o sistema testa se uma condição é verdadeira e então executa comandos de acordo com esse resultado:
+					
+public class Program
+{
+	public static void Main()
+	{
+		double media;
+        Console.WriteLine("Digite sua media.");
+        media = int.Parse(Console.ReadLine());
+
+		if (media >= 5)
+		{
+			Console.WriteLine("Aluno aprovado!");
+		}
+		else
+		{
+			Console.WriteLine("Aluno reprovado!");
+		}
+                Console.ReadKey();
+	}
+}
